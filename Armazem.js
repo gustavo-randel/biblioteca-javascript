@@ -41,10 +41,10 @@ module.exports = class Armazem {
     }
 
      salvarPoster(poster) {
-         const posterExiste = this.encontrarPosters(poster.nome)
-         if (!posterExiste) {
-          this.#storage.posters.push(poster)
-         }
+        const posterExiste = this.encontrarPosters(poster.nome)
+        if (!posterExiste) {
+        this.#storage.posters.push(poster)
+        }
      }
 
     adicionarPostersEstoque(nomePoster, quantidade){
